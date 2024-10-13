@@ -41,7 +41,7 @@ class Board:
         self.board = np.empty((self.HEIGHT,self.LENGTH))
         self.board[:] = np.NaN
         
-    #places piece at cooridnate for player
+    #places piece at coordinate for player
     def move(self,coordinate,player:bool):
         self.board[coordinate[0]][coordinate[1]] = player
         
